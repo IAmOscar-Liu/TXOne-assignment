@@ -26,9 +26,9 @@ Preview the built project after running `npm run build`
 
 I wrote some unit tests for testing the response from `OpenWeatherMap`. (Task 1)
 
-There are 2 test files, `weatherStore.test.ts` and `Weather.ts`.
+There are 2 test files, `weatherStore.test.ts` and `Weather.test.ts`.
 
-`weatherStore.test.ts` is for testing the state management using zustand, and `Weather.ts` is for testing the weather component with user interaction
+`weatherStore.test.ts` is for testing the state management using zustand, and `Weather.test.ts` is for testing the weather component with user interaction
 
 When running the test, `fakeWeatherStore.ts` is applied for testing the mock response.
 
@@ -39,7 +39,7 @@ When running the test, `fakeWeatherStore.ts` is applied for testing the mock res
 - tailwindcss
 - react-router-dom
 - zustand (state management)
-- rechart (chart tool)
+- rechart (building chart)
 
 ## Other features
 
