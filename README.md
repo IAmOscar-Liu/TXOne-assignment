@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# TXOne React.js Prototyping Exercise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Name: Oscar
 
-Currently, two official plugins are available:
+This is a project for TXOne React.js Prototyping Exercise
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to execute my code
 
-## Expanding the ESLint configuration
+### `npm install`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Install the dependencies and devDependencies
 
-- Configure the top-level `parserOptions` property like this:
+### `npm run dev`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Start the dev mode on port `5173`.\
+You can visit it on [http://localhost:5173](http://localhost:5173)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### `npm run build`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Build the project
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### `npm run preview`
+
+Preview the built project after running `npm run build`
+
+### `npm run test`
+
+I wrote some unit tests for the Weather page. (Task 1)
+
+There are 2 test files, `weatherstore.test.ts` and `Weather.ts`.
+
+`weatherstore.test.ts` is for testing the state management using zustand, and `Weather.ts` is for testing the weather component with user interaction
+
+## Main dependencies and devDependencies
+
+- vite & vitest
+- typescript
+- tailwindcss
+- react-router-dom
+- zustand (state management)
+- rechart (chart tool)
+
+## Other features
+
+The data of the line chart of Population (Task 4.) is mutatable. It's stored in `/data/mockChartData.ts`, You can modify the file to update the chart.
+
+P.S. The Open weather API key is stored in `.env`. For security reasons, this file is not accessible in the Github repository.
+
+## Contact Info.
+
+Oscar Liu\
+886-979083032
