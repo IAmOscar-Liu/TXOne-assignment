@@ -21,7 +21,7 @@ function Weather() {
       <div className="mt-8 max-w-[542px]">
         <Search />
       </div>
-      <div className="ring-black-20 mt-8 flex aspect-[542/400] max-w-[542px] flex-col rounded-md bg-white py-6 ring-1">
+      <div className="mt-8 flex aspect-[542/400] max-w-[542px] flex-col rounded-md bg-white py-6 ring-1 ring-black-20">
         {isLoading ? (
           <Loading />
         ) : error ? (

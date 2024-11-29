@@ -69,13 +69,13 @@ function search() {
         </div>
         <button
           disabled={disabled}
-          className="hover:bg-primary-hover disabled:bg-primary-disabled ms-auto h-10 w-[138px] rounded-[4px] bg-primary text-white outline-none"
+          className="ms-auto h-10 w-[138px] rounded-[4px] bg-primary text-white outline-none hover:bg-primary-hover disabled:bg-primary-disabled"
         >
           Search
         </button>
       </form>
       {isNotFound && (
-        <p className="text-danger mt-2 ps-10">
+        <p className="mt-2 ps-10 text-danger">
           {capitalizeFirstLetter(weatherInfo.message)}
         </p>
       )}
