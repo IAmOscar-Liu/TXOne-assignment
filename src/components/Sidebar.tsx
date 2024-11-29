@@ -1,4 +1,4 @@
-import { NavLink, NavLinkRenderProps } from "react-router";
+import { NavLink, NavLinkRenderProps } from "react-router-dom";
 import populationIcon from "../assets/sidebar-population.svg";
 import weatherActiveIcon from "../assets/sidebar-weather-active.svg";
 import weatherIcon from "../assets/sidebar-weather.svg";

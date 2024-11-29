@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useShallow } from "zustand/shallow";
 import { NOT_FOUND_COD } from "../../constants";
-import useWeatherStore from "../../store/weatherStore";
+import { useWeatherStore } from "../../store/weatherStore";
 import capitalizeFirstLetter from "../../utils/capitalizeFirstLetter";
 import cn from "../../utils/cn";
 

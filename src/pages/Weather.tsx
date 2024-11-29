@@ -1,10 +1,10 @@
-import useWeatherStore from "../store/weatherStore";
+import { useShallow } from "zustand/shallow";
+import Error from "../components/weather/Error";
+import Loading from "../components/weather/Loading";
+import NoData from "../components/weather/NoData";
 import Result from "../components/weather/Result";
 import Search from "../components/weather/Search";
-import Loading from "../components/weather/Loading";
-import Error from "../components/weather/Error";
-import NoData from "../components/weather/NoData";
-import { useShallow } from "zustand/shallow";
+import { useWeatherStore } from "../store/weatherStore";
 
 function Weather() {
   const { isLoading, error, weatherInfo } = useWeatherStore(

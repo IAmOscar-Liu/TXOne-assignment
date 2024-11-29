@@ -1,5 +1,17 @@
 import { NOT_FOUND_COD } from "../constants";
 
+export interface WeatherState {
+  isLoading: boolean;
+  error: any;
+  city: string;
+  country: string;
+  weatherInfo: undefined | WeatherInfo;
+}
+
+export interface WeatherAction {
+  getWeather: (city: string, country: string) => Promise<void>;
+}
+
 export type WeatherInfo =
   | { cod: typeof NOT_FOUND_COD; message: string }
   | {
