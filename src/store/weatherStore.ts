@@ -20,7 +20,7 @@ export const useWeatherStore = create<WeatherState & WeatherAction>()(
           error: null,
         });
         const res = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?q=${encodeURI(city)},${encodeURI(country)}&units=metric&appid=${import.meta.env.VITE_OPEN_WEATHER_API}`,
+          `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(city)},${encodeURI(country)}&units=metric&appid=${import.meta.env.VITE_OPEN_WEATHER_API}`,
         );
         const statusCode = res.status;
         const json = await res.json();
